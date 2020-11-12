@@ -13,7 +13,7 @@ const Menu = (props) => (
     <li>
       <a className="btnLogout">로그아웃</a>
     </li>
-    <li className="btnClose" onClick={this.closePopup.bind(this)}>
+    <li className="btnClose" >
       <img src="/img/btn_close.png" alt="메뉴닫기" />
     </li>
   </ul>
