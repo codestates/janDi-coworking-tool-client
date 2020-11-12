@@ -1,0 +1,15 @@
+/* your css code */
+.MiniButtonWrapper{
+  position: absolute;
+  top:50%;
+  margin-top:-16px;
+  padding:9px 20px;
+  background: #EBEDF0;
+  font-size: 0.65rem;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+.MiniButtonWrapper:global.right{
+  right:0;
+}

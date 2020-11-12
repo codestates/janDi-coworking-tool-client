@@ -1,0 +1,32 @@
+
+.Mypage-userInfo li{
+  display: flex;
+  margin-bottom: 15px;
+}
+.Mypage-userInfo li label{
+  display:flex;
+  align-items: center;
+  width:70px;
+  color: #b8B8B8;
+}
+.Mypage-userInfo li :global .inputWrap{
+  flex:1;
+  position: relative;
+  padding-right: 15px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #707070;
+}
+.Mypage-userInfo li :global .inputWrap input{
+  width:100%;
+  box-sizing: border-box;
+  height: 100%;
+  border: none;
+  font-size: 1rem;
+}
+
+.Mypage-userInfo li :global .btnModify{
+  position: absolute;
+  top:2px;
+  right:5px;
+
+}

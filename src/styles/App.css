@@ -1,4 +1,18 @@
-/*메인*/
+/*공통*/
+
+html,body{
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  outline: none;
+}
+
+/*App layout*/
+
 :global .App-wrap {
   display: flex;
   height: 100vh;
@@ -17,7 +31,29 @@
   box-sizing: border-box;
 }
 
+:global .App-contents{
+  padding:0 20px;
+}
+
+
+/*잔디Bg*/
 :global .jandiBg{
   background-image: url('/img/jandiBg.jpg');
   background-size: cover;
+}
+
+
+/*Text*/
+h2{
+  width:100%;
+  text-align:center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 1.3rem;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+input:read-only{
+  color:#B8B8B8;
 }
