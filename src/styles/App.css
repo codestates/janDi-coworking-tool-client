@@ -22,7 +22,7 @@ select {
 }
 
 :global .mb-view {
-  
+  position: relative;
   width:100%;
   height:100%;
   max-width:400px;
@@ -44,6 +44,11 @@ select {
 
 
 /*Text*/
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
 h2{
   width:100%;
   text-align:center;
