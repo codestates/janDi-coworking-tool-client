@@ -46,11 +46,7 @@ class Signup extends Component {
             this.props.history.push('/login');
           }
         }).catch((error) => {
-          if (error.response.status) {
-            this.setState({
-              validateMsg: '이미 가입한 사용자입니다'
-            })
-          }
+
         });
     }
   }
@@ -109,7 +105,7 @@ class Signup extends Component {
               <li onClick={this.onSubmitSignup.bind(this)}>
                 <Button>가입하기</Button>
               </li>
-              <li className={cx('text')}>
+              {/* <li className={cx('text')}>
                 <span>또는</span>
               </li>
               <li>
@@ -123,7 +119,7 @@ class Signup extends Component {
                   <img src="/img/ico_google.png" alt="페이스북" className="icoImg" />
                   Google로 가입
                 </Button>
-              </li>
+              </li> */}
             </ul>
 
           </div>

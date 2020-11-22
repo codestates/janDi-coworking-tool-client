@@ -34,6 +34,7 @@ class Main extends Component {
       this.props.history.push('/login')
     }
     axios.get(server_path + '/main', { withCredentials: true }).then(res => {
+      console.log(res.data);
       this.props.setProjects(res.data);
     }).catch(error => {
       if (error.response && error.response.status === 401) {
@@ -110,6 +111,32 @@ class Main extends Component {
     // });
   }
 
+  onLoadJandi() {
+    let { cookies } = this.props;
+    axios.get(server_path + '/main', { withCredentials: true }).then(res => {
+
+      console.log(res.data);
+      this.props.setProjects(res.data);
+      let project;
+      if (this.props.projects && this.props.projects.length > 0) {
+        project = this.props.projects.filter(item => {
+          return item.id == this.state.projectId;
+        });
+        if (project.length > 0) {
+          this.setState({
+            project: project[0],
+          })
+        }
+      }
+    }).catch(error => {
+      if (error.response && error.response.status === 401) {
+        //쿠키삭제
+        cookies.remove('userId');
+        this.props.history.push('/login');
+      }
+    })
+  }
+
   onCreateProject() {
     let { cookies } = this.props;
     let { projectNameInput, memberLists } = this.state;
@@ -123,20 +150,13 @@ class Main extends Component {
         projectName: this.state.projectNameInput,
         member: this.state.memberLists
       }, { withCredentials: true }).then(res => {
+
         this.setState({
           isPopupOpen: false
         });
 
-        axios.get(server_path + '/main', { withCredentials: true }).then(res => {
-          this.props.setProjects(res.data);
-        }).catch(error => {
-          console.log(error.response.status === 401);
-          if (error.response && error.response.status === 401) {
-            //쿠키삭제
-            cookies.remove('userId');
-            this.props.history.push('/login');
-          }
-        })
+        this.onLoadJandi();
+
       }).catch(error => {
         if (error.response && error.response.status === 401) {
           //쿠키삭제

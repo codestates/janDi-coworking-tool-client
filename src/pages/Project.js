@@ -54,6 +54,7 @@ class Project extends Component {
     let day = this.getToday();
     this.props.setTodosDate(day);
 
+
     axios.get(server_path + '/projectinfo?pid=' + projectId + '&day=' + this.props.targetDate, { withCredentials: true }).then(res => {
       let filteredMember = res.data.member.filter(item => item !== this.props.userEmail);
       let data = res.data;
@@ -220,6 +221,7 @@ class Project extends Component {
       data.member = filteredMember;
       this.props.setTodos(data);
     }).catch(error => {
+      console.log(error);
       if (error.response && error.response.status === 401) {
         //쿠키삭제
         cookies.remove('userId');
@@ -231,6 +233,7 @@ class Project extends Component {
   onLoadJandi() {
     let { cookies } = this.props;
     axios.get(server_path + '/main', { withCredentials: true }).then(res => {
+      console.log(res.data);
       this.props.setProjects(res.data);
       let project;
       if (this.props.projects && this.props.projects.length > 0) {

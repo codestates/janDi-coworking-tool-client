@@ -12,7 +12,6 @@ class TodoItem extends Component {
       id,
       IsChecked: e.target.checked
     }, { withCredentials: true }).then(res => {
-      //console.log(res);
       this.props.onLoadData();
     }).catch(error => {
       console.error(error)

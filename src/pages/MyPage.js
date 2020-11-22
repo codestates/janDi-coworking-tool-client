@@ -75,14 +75,13 @@ class Mypage extends Component {
     axios.put(server_path + '/userchange', {
       userName
     }, { withCredentials: true }).then(res => {
-      console.log(res);
       let { email, passLen, userName } = this.state.input;
       this.props.setUser(email, passLen, userName);
       this.setState((prevState) => ({
         isReadonlyUserName: !prevState.isReadonlyUserName
       }))
     }).catch(e => {
-      console.error(e)
+
     })
 
   }
@@ -138,20 +137,34 @@ class Mypage extends Component {
         currentPassword: currentPass,
         newPassword: changePass
       }, { withCredentials: true }).then(res => {
-        let { email, userName } = this.state.input;
-        let passLen = changePass.length;
-        this.props.setUser(email, passLen, userName);
+        console.log(res.data);
+
         this.setState((prevState) => ({
+          currentPass: '',
+          changePass: '',
+          changePassCheck: '',
           errorMessage: '비밀번호가 수정됐습니다',
           isReadonlyUserName: !prevState.isReadonlyUserName
         }))
+        let { email, userName } = this.props;
+        let passLen = changePass.length;
+
+        this.props.setUser(email, passLen, userName);
+
+      }).catch(e => {
+        console.log(e.response.status);
+        if (e.response && e.response.status === 422) {
+          this.setState({
+            errorMessage: "비밀번호를 다시 입력해주세요"
+          })
+        }
       })
     }
   }
 
   render() {
     let pass = '';
-    for (let i = 0; i < this.state.input.passLen; i++) {
+    for (let i = 0; i < this.props.passLen; i++) {
       pass += 'p';
     }
     return (
