@@ -1,68 +1,52 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](https://img.shields.io/badge/PROJECT-JANDI--COWORKING--TOOL-blue?style=for-the-badge) 
+![](https://img.shields.io/badge/JANDI--COWORKING--TOOL-WEB-yellowgreen?style=for-the-badge)
+# 🌱JanDi-Coworking-tool
+![](https://postfiles.pstatic.net/MjAyMDExMjBfMTIw/MDAxNjA1ODA0MDE4ODE1.Nq6E0k3ccbeCl-oOjZHEzc_DlqSwAFdINKdEghCKOPcg.-6LvwNZVu3MqTXZ_Hz1enodfL6E2ta9sWw4JKrjZDwIg.PNG.rosic2012/ico_janid2.png?type=w966)
 
-## Available Scripts
+우리가 협업을 할 때,
 
-In the project directory, you can run:
+팀원이 무엇을 하고 있고 내가 뭘 도울 수 있는지 쉽사리 놓치게 됩니다.
 
-### `yarn start`
+그런 여러분을 도와드릴 JANDI를 찾아주세요 ~
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+팀 단위 프로젝트에서 팀원들과 업무와 진행 상황을 공유하고, 잔디밭으로 개인별 성취도를 확인하세요 !
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+# 🕵🏼어떤 기술이 사용되었나요? 
+## FRONT
+![](https://img.shields.io/badge/FRONT-JAVASCRIPT-yellow?style=for-the-badge&logo=javascript) 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![](https://img.shields.io/badge/FRONT-REACT-blue?style=for-the-badge&logo=react) 
 
-### `yarn build`
+![](https://img.shields.io/badge/FRONT-REDUX-purple?style=for-the-badge&logo=redux) 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## BACK
+![](https://img.shields.io/badge/BACK-NODE-green?style=for-the-badge&logo=node.js) 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+![](https://img.shields.io/badge/BACK-EXPRESS-black?style=for-the-badge&logo=express) 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![](https://img.shields.io/badge/BACK-AWS-orange?style=for-the-badge&logo=Amazon-AWS) 
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# 🗣️우리를 소개합니다.
+<table>
+  <tr>
+    <td style="cursor:pointer;" onClick = "location.href='http://ihouse.so.vc'">김건</td>
+    <td>Backend</td>
+  </tr>
+  <tr>
+    <td>오지영</td>
+    <td>FrontEnd</td>
+  </tr>
+  <tr>
+    <td>이광섭</td>
+    <td>Frontend</td>
+  </tr>
+  <tr>
+    <td>임민주</td>
+    <td>Backend</td>
+  </tr>
+</table>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+# For project details
+### [checkout WIKI](https://github.com/codestates/janDi-coworking-tool-server/wiki)
