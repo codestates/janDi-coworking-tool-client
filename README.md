@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/PROJECT-JANDI--COWORKING--TOOL-blue?style=for-the-badge) 
 ![](https://img.shields.io/badge/JANDI--COWORKING--TOOL-WEB-yellowgreen?style=for-the-badge)
-# 🌱JanDi-Cowrking-tool
+# 🌱JanDi-Coworking-tool
 ![](https://postfiles.pstatic.net/MjAyMDExMjBfMTIw/MDAxNjA1ODA0MDE4ODE1.Nq6E0k3ccbeCl-oOjZHEzc_DlqSwAFdINKdEghCKOPcg.-6LvwNZVu3MqTXZ_Hz1enodfL6E2ta9sWw4JKrjZDwIg.PNG.rosic2012/ico_janid2.png?type=w966)
 
 우리가 협업을 할 때,
